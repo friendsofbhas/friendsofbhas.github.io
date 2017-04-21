@@ -1,6 +1,5 @@
 # Friends of Benton Harbor Area Schools
-
-## Bugs and Issues
+Single landing page for FriendsOfBHAS.
 
 ## Creator
 
