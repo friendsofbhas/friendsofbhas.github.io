@@ -1,9 +1,10 @@
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
 p {
   font-size: 20px;
+  margin: 0 0 1.5em;
 }
 p.small {
   font-size: 16px;
@@ -478,6 +479,7 @@ fieldset[disabled] .btn-primary.active {
   background-color: #f26a2f;
   border-color: #f26a2f;
   font-weight: 700;
+  border-radius: 0px;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -514,6 +516,12 @@ fieldset[disabled] .btn-success.active {
 .btn-success .badge {
   color: #f26a2f;
   background-color: white;
+}
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active {
+  background-color: #333333 !important;
+  border-color: #d64a0d !important;
 }
 .btn-social {
   display: inline-block;
