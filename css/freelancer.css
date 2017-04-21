@@ -192,6 +192,27 @@ header .intro-text .skills {
 .panel-body {
   font-size: 16px;
 }
+.panel-title {
+  text-align: left;
+}
+.panel-title > a {
+  display: block;
+  position: relative;
+  padding-right: 50px;
+}
+.panel-title > a:after {
+  content: "\f078";
+  /* fa-chevron-down */
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.panel-title > a[aria-expanded="true"]:after {
+  content: "\f077";
+  /* fa-chevron-up */
+}
 section {
   padding: 100px 0;
 }
