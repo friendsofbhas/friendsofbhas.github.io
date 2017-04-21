@@ -179,6 +179,15 @@ header .intro-text .skills {
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
+  .navbar-middle {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
 }
 .panel-body {
   font-size: 16px;
