@@ -1,5 +1,5 @@
 # Friends of Benton Harbor Area Schools
-Single landing page for FriendsOfBHAS.
+Single landing page for FriendsOfBHAS. Vote Yes.
 
 ## Creator
 
