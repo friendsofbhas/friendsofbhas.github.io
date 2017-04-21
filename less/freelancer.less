@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
+.panel-title {
+	text-align: left;
+}
+
 hr.star-light,
 hr.star-primary,
 hr.star-header {
@@ -204,6 +208,23 @@ header {
 	        font-size: 1.5em;
 	    }
 	}
+}
+
+.panel-title > a {
+  display: block;
+  position: relative;
+	padding-right: 50px;
+}
+.panel-title > a:after {
+  content: "\f078"; /* fa-chevron-down */
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.panel-title > a[aria-expanded="true"]:after {
+  content: "\f077"; /* fa-chevron-up */
 }
 
 .panel-body {
@@ -474,6 +495,7 @@ footer {
 .btn-success {
 	.button-variant(white; @theme-success; @theme-success);
 	font-weight: 700;
+	border-radius: 0px;
 }
 
 .btn-social {

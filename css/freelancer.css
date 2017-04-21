@@ -26,6 +26,9 @@ h6 {
   text-align: center;
   font-weight: 700;
 }
+.panel-title {
+  text-align: left;
+}
 hr.star-light,
 hr.star-primary,
 hr.star-header {
@@ -179,6 +182,24 @@ header .intro-text .skills {
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
+}
+.panel-title > a {
+  display: block;
+  position: relative;
+  padding-right: 50px;
+}
+.panel-title > a:after {
+  content: "\f078";
+  /* fa-chevron-down */
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.panel-title > a[aria-expanded="true"]:after {
+  content: "\f077";
+  /* fa-chevron-up */
 }
 .panel-body {
   font-size: 16px;
@@ -448,6 +469,7 @@ fieldset[disabled] .btn-primary.active {
   background-color: #f26a2f;
   border-color: #f26a2f;
   font-weight: 700;
+  border-radius: 0px;
 }
 .btn-success:hover,
 .btn-success:focus,
