@@ -7,6 +7,7 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var filter = require('gulp-filter');
 var pkg = require('./package.json');
+var watch = require('gulp-watch');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -98,4 +99,19 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() 
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('js/**/*.js', browserSync.reload);
+});
+
+// Watch
+gulp.task('stream', function () {
+    // Endless stream mode
+    return watch('css/**/*.css', { ignoreInitial: false })
+        .pipe(gulp.dest('build'));
+});
+
+gulp.task('callback', function () {
+    // Callback mode, useful if any plugin in the pipeline depends on the `end`/`flush` event
+    return watch('css/**/*.css', function () {
+        gulp.src('css/**/*.css')
+            .pipe(gulp.dest('build'));
+    });
 });

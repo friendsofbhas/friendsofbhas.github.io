@@ -126,6 +126,7 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
+  text-align: center;
 }
 .navbar-custom .navbar-nav li a {
   color: white;
@@ -179,6 +180,9 @@ header .intro-text .skills {
     font-size: 1.5em;
   }
 }
+.panel-body {
+  font-size: 16px;
+}
 section {
   padding: 100px 0;
 }
@@ -201,6 +205,9 @@ section.success h2 {
   section.first {
     padding-top: 75px;
   }
+}
+table {
+  width: 100%;
 }
 th {
   color: white;
