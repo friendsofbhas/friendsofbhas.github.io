@@ -2,12 +2,13 @@
 @import "mixins.less";
 
 body {
-	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	overflow-x: hidden;
 }
 
 p {
 	font-size: 20px;
+	margin: 0 0 1.5em;
 }
 
 p.small {
@@ -504,6 +505,13 @@ footer {
 .btn-success {
 	.button-variant(white; @theme-success; @theme-success);
 	font-weight: 700;
+	border-radius: 0px;
+	&:focus,
+	&:active,
+	&.active {
+		background-color: @gray-dark !important;
+		border-color: #d64a0d !important;
+	}
 }
 
 .btn-social {
