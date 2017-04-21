@@ -145,6 +145,7 @@ header {
 	}
 	.navbar-nav {
 		letter-spacing: 1px;
+		text-align: center;
 		li {
 			a {
 				color: white;
@@ -184,16 +185,6 @@ header {
 	}
 }
 
-	.navbar-header-group {
-		display: flex;
-	}
-
-	.navbar-header-group-item {
-		width: 50px;
-		height: 50px;
-		margin-right: 20px;
-	}
-
 @media(min-width:768px) {
     .navbar-custom {
         padding: 25px 0;
@@ -213,6 +204,10 @@ header {
 	        font-size: 1.5em;
 	    }
 	}
+}
+
+.panel-body {
+	font-size: 16px;
 }
 
 section {
@@ -242,6 +237,10 @@ section.success {
 }
 
 // Table
+table {
+	width: 100%;
+}
+
 th {
   color: white;
   background: @theme-primary;
